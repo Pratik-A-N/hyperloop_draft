@@ -8,20 +8,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kanit:ital@1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <div class="navbar">
             <div >
-                <img src="./Assets/hyperloop logo reqw.png" alt="" id="image">
-            </div>
-           <a href="#">Home</a>
-           <a href="#">About Us</a>
-           <a href="#">Prototype</a>
-           <a href="#">Team</a>
+                <img src="./Assets/hyperloop logo reqw.png" alt="" id="image" >
+            </div> 
+            <div class="topnav" id="myTopnav">
+                <a href="#home" class="active">Home</a>
+                <a href="#news">About</a>
+                <a href="#contact">Prototype</a>
+                <a href="#about">Team</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
         </div>
-        <h1>Hyperloop IITB</h1>
+        <div class="h">Hyperloop IITB</div>
         <h2>Redefining Speed.</h2>
         <div class="const">
            <img src="./Assets/const.jpg" alt="" id="construct">
@@ -45,4 +51,14 @@
         </div>
     </div>
 </body>
+<script>
+    function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+} 
+</script>
 </html>
