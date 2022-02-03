@@ -34,7 +34,7 @@
 
  /* Add a black background color to the top navigation */
  .topnav {
-    background-color: #333;
+    background-image: radial-gradient(black, rgb(31, 31, 54) );
     overflow: hidden;
     width:100%;
   }
